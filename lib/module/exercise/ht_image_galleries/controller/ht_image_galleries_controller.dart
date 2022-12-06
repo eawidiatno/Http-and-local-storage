@@ -29,17 +29,17 @@ class HtImageGalleriesController extends State<HtImageGalleriesView>
     setState(() {});
     /*
     TODO: --
-    1. Buat sebuah get request menggunakan DIO
+  1.Buat sebuah get request menggunakan DIO
     ! snippet: dio_get
 
     @GET
     @URL
     "${AppConfig.baseUrl}/image-galleries?limit=100",
 
-    2. Masukkan response data ke dalam productList
+  2.Masukkan response data ke dalam productList
     imageGalleries = obj["data"];
 
-    3. Panggil setState setelah-nya
+  3.Panggil setState setelah-nya
     */
 
     var response = await Dio().get(
@@ -111,16 +111,16 @@ class HtImageGalleriesController extends State<HtImageGalleriesView>
   doUploadAllPlatform() async {
     showLoading();
     /*
-    7. Gunakan file picker yang support untuk semua platform
+  7. Gunakan file picker yang support untuk semua platform
     !snippet: get_image_with_file_picker
 
-    8. Nah, sekarang kamu sudah bisa mengambil gambar dengan
+  8. Nah, sekarang kamu sudah bisa mengambil gambar dengan
     file picker, Mari kita coba upload ke file hosting.
     Disini kita menggunakan IMGBB
     Bwt script Dio untuk upload file
     !snippet: dio_upload
 
-    9. Nice, sekarang kamu sudah berhasil mengupload file dan
+  9. Nice, sekarang kamu sudah berhasil mengupload file dan
     mendapatkan url-nya!
 
     10. Tambahkan kita baris kode ini setelah-nya:
